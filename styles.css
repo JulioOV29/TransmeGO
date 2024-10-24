@@ -1,78 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
-	width:100%; /* Establecemos que el header abarque el 100% del documento */
-	overflow:hidden; /* Eliminamos errores de float */
-	background:#1A0C27    ;
-	margin-bottom:20px;
+    width:100%;
+    overflow:hidden;
+    background:#1A0C27;
+    margin-bottom:20px;
 }
 
 .wrapper {
-	width:90%; /* Establecemos que el ancho sera del 90% */
-	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-	margin:auto; /* Centramos los elementos */
-	overflow:hidden; /* Eliminamos errores de float */
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    overflow:hidden;
 }
 
 header .logo {
-    font-family: 'Suez One';
-	color:#f2f2f2;
-	font-size:50px;
-	line-height:200px;
-	float:left;
+    float:left;
+    margin-top: 20px;
 }
 
 header nav {
-	float:right;
-	line-height:200px;
+    float:right;
+    line-height:100px;
 }
 
 header nav a {
-	display:inline-block;
-	color:#fff;
-	text-decoration:none;
-	padding:10px 20px;
-	line-height:normal;
-	font-size:20px;
-	font-weight:bold;
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    font-size:20px;
+    font-weight:bold;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
 }
 
 header nav a:hover {
-	background:#EEFF2F;
-	border-radius:50px;
+    background: #EEFF2F;
+    border-radius: 25px; /* Mantén un borde redondeado más pequeño */
+    padding: 5px 15px; /* Reduce el padding para hacer el hover más pequeño */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra más sutil y pequeña */
+    transition: all 300ms ease;
 }
 
-.components i {
+
+/* Sección de héroe */
+
+.hero {
+    background-image: url(/imagenes/transmetro-1024x576.jpg);
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex; /* Activamos Flexbox */
+    align-items: center; /* Centramos verticalmente el contenido */
+    justify-content: center; /* Centramos horizontalmente */
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #1A0C27;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.hero p {
     font-size: 25px;
-    padding: 5px;
+    color: #fff;
+    background-color: #1A0C27;
+    display: inline;
+    border-radius: 10px;
 }
 
-.components i:hover {
-    color: #EEFF2F;
-    transition: color 0.3s ease-in-out;
+.app-links img {
+    width: 150px;
+    margin: 20px;
 }
+
+/* Secciones de objetivos y solución */
+.objectives, .solution {
+    padding: 50px 0;
+    background: #F9F9F9;
+    text-align: center;
+}
+
+.objectives h2, .solution h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.objectives p, .solution p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Estilos del footer */
 footer {
     width: 100%;
     background-color: #1A0C27;
     padding: 20px 0;
     color: white;
     text-align: center;
-    position: relative;
-    bottom: 0;
-	position: fixed;
 }
 
-.footer-content p {
-    margin: 0;
-    font-size: 16px;
-}
-
-.footer-content a {
+footer a {
     color: #EEFF2F;
     text-decoration: none;
 }
 
-.footer-content a:hover {
+footer a:hover {
     color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+header.header2 {
+    background-color: #0B0523; /* Cambia el color del header al hacer scroll */
+    transition: background-color 0.3s ease;
 }
