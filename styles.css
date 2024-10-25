@@ -82,10 +82,13 @@ header nav a:hover {
     background-color: #1A0C27;
     display: inline;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .app-links img {
-    width: 150px;
+    width: 160px;
+    height: 10;
     margin: 20px;
 }
 
