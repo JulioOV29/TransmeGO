@@ -5,8 +5,15 @@
 header {
     width:100%;
     overflow:hidden;
-    background:#1A0C27;
+    background:#000000;
     margin-bottom:20px;
+}
+
+body{
+    background-color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 40px;
 }
 
 .wrapper {
@@ -14,6 +21,7 @@ header {
     max-width:1000px;
     margin:auto;
     overflow:hidden;
+    flex: 1;
 }
 
 header .logo {
@@ -39,7 +47,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background: #EEFF2F;
+    background: #333333;
     border-radius: 25px; /* Mantén un borde redondeado más pequeño */
     padding: 5px 15px; /* Reduce el padding para hacer el hover más pequeño */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra más sutil y pequeña */
@@ -70,16 +78,17 @@ header nav a:hover {
 
 .hero h1 {
     font-size: 50px;
-    color: #1A0C27;
-    background-color: #fff;
+    color: #000000;
+    background-color: rgba(255, 255, 255, .87);
     display: inline-block;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 25px;
     color: #fff;
-    background-color: #1A0C27;
+    background-color: rgba(0, 0, 0, .87);
     display: inline;
     border-radius: 10px;
     padding-left: 10px;
@@ -91,20 +100,21 @@ header nav a:hover {
     height: 10;
     margin: 20px;
 }
-
 /* Secciones de objetivos y solución */
 .objectives, .solution {
     padding: 50px 0;
-    background: #F9F9F9;
+    background: #eeeeee;
     text-align: center;
 }
 
 .objectives h2, .solution h2 {
+    color: #000000;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
 .objectives p, .solution p {
+    color: #333333;
     font-size: 18px;
     margin-bottom: 30px;
 }
@@ -114,6 +124,7 @@ ul {
 }
 
 ul li {
+    color: #555555;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -121,19 +132,22 @@ ul li {
 /* Estilos del footer */
 footer {
     width: 100%;
-    background-color: #1A0C27;
+    background-color: #000000;
     padding: 20px 0;
     color: white;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
 }
 
 footer a {
-    color: #EEFF2F;
+    color: #333333;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #fff;
+    color: #cccccc;
 }
 
 footer p {
@@ -141,6 +155,73 @@ footer p {
     font-size: 16px;
 }
 header.header2 {
-    background-color: #0B0523; /* Cambia el color del header al hacer scroll */
+    background-color: #333333; /* Cambia el color del header al hacer scroll */
     transition: background-color 0.3s ease;
+}
+
+.solution li{
+    display:inline-block ;
+}
+
+.toggleBtn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el contenido desplegable */
+.detalle {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #434d53;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.solution ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Espacio entre cada elemento */
+    padding: 0;
+    list-style: none;
+}
+
+.solution li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono-solucion {
+    font-size: 40px; /* Tamaño grande del ícono */
+    color: #000000; /* Color del ícono */
+    margin-bottom: 10px; /* Espacio entre el ícono y el título */
+}
+
+.solution h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.solution p {
+    font-size: 14px;
+    color: #555;
 }
