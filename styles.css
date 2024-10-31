@@ -1,19 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Utilities */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", serif;
 }
 header {
     width:100%;
     overflow:hidden;
     background:#000000;
-    margin-bottom:20px;
+}
+
+.solucion {
+    margin-bottom: 20px;
+
 }
 
 body{
     background-color: #ffffff;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 40px;
+    padding-bottom: 280px;
 }
 
 .wrapper {
@@ -21,6 +30,16 @@ body{
     max-width:1000px;
     margin:auto;
     overflow:hidden;
+    flex: 1;
+}
+
+.wrapper-header {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    overflow:hidden;
+    display: flex;
+    justify-content: space-around;
     flex: 1;
 }
 
@@ -56,15 +75,17 @@ header nav a:hover {
 
 
 /* Sección de héroe */
-
 .hero {
-    background-image: url(/imagenes/transmetro-1024x576.jpg);
-    background-size: cover;
-    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(imagenes/transmetro-1024x576.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    display: flex; /* Activamos Flexbox */
-    align-items: center; /* Centramos verticalmente el contenido */
-    justify-content: center; /* Centramos horizontalmente */
+    height: 100vh;
 }
 
 .hero .wrapper {
@@ -100,6 +121,7 @@ header nav a:hover {
     height: 10;
     margin: 20px;
 }
+
 /* Secciones de objetivos y solución */
 .objectives, .solution {
     padding: 50px 0;
@@ -125,7 +147,7 @@ ul {
 
 ul li {
     color: #555555;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
@@ -133,22 +155,36 @@ ul li {
 footer {
     width: 100%;
     background-color: #000000;
+    margin-top: 20px;
     padding: 20px 0;
     color: white;
     text-align: center;
     position: absolute;
     bottom: 0;
-    height: 40px;
+    height: 280px;
+}
+
+.contenedor-contactos ul,.contenedor-redes ul{
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contenedor-contactos li{
+    color:#fff;
+}
+
+.wrapper-footer p{
+    font-size: 20px;
 }
 
 footer a {
-    color: #333333;
+    color: #ffffff;
     text-decoration: none;
 }
 
-footer a:hover {
-    color: #cccccc;
-}
 
 footer p {
     margin: 0;
@@ -174,6 +210,7 @@ header.header2 {
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -186,12 +223,20 @@ header.header2 {
     margin-top: 10px;
     color: #333333;
     font-size: 16px;
+    min-height: 130px;
+}
+
+.detalle p {
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .solution ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
     gap: 20px; /* Espacio entre cada elemento */
     padding: 0;
     list-style: none;
@@ -224,4 +269,22 @@ header.header2 {
 .solution p {
     font-size: 14px;
     color: #555;
+}
+
+#mayus {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.contenedores-soluciones ul {
+    display: flex;
+    width: 100%;
+}
+
+.lista-soluciones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 50px;
 }

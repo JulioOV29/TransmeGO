@@ -10,14 +10,14 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper-header">
             <div class="logo"><a href="index.html"><img src="/imagenes/Transme_GO_no_background_r.png" alt="Logo transmego"></a></div>
             <nav>
                 <div class="components">
-                    <a href="index.html">Inicio</a>
-                    <a href="objetivos.html">Objetivos</a>
-                    <a href="solucion.html">Solución</a>
-                    <a href="Nosotros.html">Nosotros</a>
+                    <a id="mayus" href="index.html">Inicio</a>
+                    <a id="mayus" href="objetivos.html">Objetivos</a>
+                    <a id="mayus" href="solucion.html">Solución</a>
+                    <a id="mayus" href="Nosotros.html">Nosotros</a>
                     <a href="https://www.facebook.com/profile.php?id=61567866052051" target="_blank"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/trans_mego/" target="_blank"><i class="bi bi-instagram"></i></a>
                     <a href="https://x.com/TransmeGO_" target="_blank"><i class="bi bi-twitter-x"></i></a>
@@ -30,10 +30,11 @@
         <div class="wrapper">
             <h2>Solución Propuesta</h2>
             <p>La app TransmeGO ofrece una solución moderna para las largas filas en los puntos de recarga del sistema Transmetro:</p>
-            <ul>
-                <li>
-                    <i class="bi bi-wallet2 icono-solucion"></i>
-                    <strong>Recarga Virtual:</strong> Recarga tu saldo desde una app móvil, sin necesidad de acudir a un punto físico.
+            <div class="lista-soluciones">
+                <ul>
+                    <li>
+                        <i class="bi bi-wallet2 icono-solucion"></i>
+                        <strong>Recarga Virtual:</strong> Recarga tu saldo desde una app móvil, sin necesidad de acudir a un punto físico.
                     <button class="toggleBtn">+</button>
                     <div class="detalle" style="display: none;">
                         <p>Recarga virtualmente tu tarjeta usando aplicaciones como Nequi y Daviplata, lo que permite más conveniencia y menos tiempo en filas.</p>
@@ -57,14 +58,30 @@
                 </li>
             </ul>
         </div>
+        </div>
     </section>
     
-    <footer>
-        <div class="wrapper">
-            <p>Contáctanos: <a href="mailto:transmego.info@gmail.com">transmego.info@gmail.com</a></p>
+	<footer id="contacto">
+		<div class="wrapper-footer">
+            <div class="contenedor-contactos">
+                <h2>CONTACTANOS </h2>
+                <ul>
+                    <li><strong>EMAIL:</strong><a href="mailto:transmego.info@gmail.com"> transmego.info@gmail.com</a></li>
+                    <li><strong>TELEFONO:</strong> +57 5 1234567 </li>
+                    <li><strong>DIRECCION:</strong> Cl. 58 #55 - 66</li>
+                </ul>
+            </div>
+            <div class="contenedor-redes">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61567866052051" target="_blank" ><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/trans_mego/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://x.com/TransmeGO_" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                </ul>
+            </div>
             <p>&copy; 2024 TransmeGO. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+		</div>
+	</footer>
 
     <script src="header.js"></script>
     <script src="despegable.js"></script>
