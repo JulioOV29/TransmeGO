@@ -49,14 +49,12 @@ body{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
-    
     padding: 20px;
 }
 
 .image-inicio {
     flex: 1;
     max-width: 300px; /* Ajusta el ancho según tus necesidades */
-    margin-left: -30px;
     float: left;
 }
 
@@ -322,4 +320,63 @@ header.header2 {
 
 .lista-soluciones p { 
     font-size: 16px;
+}
+
+/* Estilos específicos para la sección "Sobre Nosotros" */
+.about {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about strong {
+    color: #000; /* Resalta el nombre de la marca */
+}
+
+.policies {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.policies h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.policies h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.policies p {
+    margin-bottom: 1rem;
+}
+
+.policies a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.policies a:hover {
+    text-decoration: underline;
 }
