@@ -17,15 +17,13 @@ header {
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #ebebeb;
     position: relative;
     min-height: 100vh;
     padding-bottom: 280px;
 }
 
 .wrapper {
-    width:90%;
-    max-width:1000px;
     margin:auto;
     overflow:hidden;
     flex: 1;
@@ -41,19 +39,27 @@ body{
     flex: 1;
 }
 
+.description-inicio {
+    margin: auto 0; /* Centra verticalmente dentro del contenedor */
+    max-width: 600px; /* Control del ancho (opcional) */
+    text-align: left; /* Cambia a "center" si deseas centrar horizontalmente el texto */
+}
 .contenedor-objetivosI {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     padding: 20px;
+    gap: 20px;
 }
-
+.contenedor-objetivosI .description-inicio{
+    align-items: center;
+}
 .image-inicio {
     flex: 1;
     max-width: 300px; /* Ajusta el ancho según tus necesidades */
     float: left;
+    margin-left: 100px;
 }
 
 .description-inicio {
@@ -148,11 +154,18 @@ header nav a:hover {
     margin: 20px;
 }
 
-/* Secciones de objetivos y solución */
+.objectives{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
 .objectives, .solution {
     padding: 50px 0;
-    background: #eeeeee;
+    background: #f9f9f9;
     text-align: center;
+    border-radius:5px ;
+    row-gap: 10px;
+    margin-bottom: 10px;
 }
 
 .objectives h2, .solution h2 {
@@ -270,7 +283,7 @@ header.header2 {
 }
 
 .solution li {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
     padding: 15px;
     border-radius: 5px;
     width: 200px; /* Ajusta el ancho según tus necesidades */
@@ -385,13 +398,22 @@ header.header2 {
     justify-content: center;
     background-color: #f9f9f9; /* Fondo similar al de las soluciones */
     padding: 20px;
-    margin: 30px 30px;
+    margin-bottom: 25px;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     text-align: center; 
     column-gap: 70px;
 }
 
+.wrapper-simulador p{
+    max-width: 400px;
+}
+
+.wrapper-simulador{
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;    
+}
 
 
 #simulador-pago h3 {
@@ -440,10 +462,23 @@ header.header2 {
     font-weight: bold; /* Negrita */
 }
 
+#simulador-pago .wrapper-simulador {
+    display: flex;
+    flex-direction: column; /* Disposición vertical */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    gap: 10px;              /* Espacio entre los elementos */
+}
+
+#equipo{
+    background-color: #f9f9f9;
+    padding-bottom: 10px;
+}
+
 #equipo h2{
     text-align: center ;
-    font-size: 30px;
+    font-size: 40px;
     margin: 15px 15px;
+    padding-top: 20px;
 }
 
 
