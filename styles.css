@@ -381,13 +381,18 @@ header.header2 {
 
 /* Estilos para el simulador de pago */
 #simulador-pago {
+    display: flex;
+    justify-content: center;
     background-color: #f9f9f9; /* Fondo similar al de las soluciones */
     padding: 20px;
     margin: 30px 30px;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    text-align: center; /* Alineación central */
+    text-align: center; 
+    column-gap: 70px;
 }
+
+
 
 #simulador-pago h3 {
     font-size: 24px; /* Tamaño del título */
@@ -433,4 +438,111 @@ header.header2 {
     font-size: 18px; /* Tamaño del texto */
     color: #333; /* Color del texto */
     font-weight: bold; /* Negrita */
+}
+
+#equipo h2{
+    text-align: center ;
+    font-size: 30px;
+    margin: 15px 15px;
+}
+
+
+
+.nuestro-team{
+    display: grid;
+    grid-template-columns: repeat(3,280px);
+    margin-bottom: 60px;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.nuestro-team h3,p{
+    margin-top: 5px;
+}
+
+
+
+.nuestro-team > div{
+    padding: 30px 30px 40px 30px;
+    background-color: #020202;
+    border-radius: 12px;
+    margin: 0 auto;
+    text-align: center;
+    color: #eeeeee;
+}
+
+
+#equipo img{
+    width: 160px;
+    height: 240px;
+    border-radius: 12px;
+}
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+    .hero h1 {
+        font-size: 60px;
+    }
+}
+
+/* Estilos para laptops (1024px a 1199px) */
+@media (max-width: 1199px) and (min-width: 1024px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+    .wrapper-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Estilos para tablets (768px a 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para móviles grandes (480px a 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    header nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 479px) {
+    .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    header nav a {
+        font-size: 12px;
+    }
+    .solution ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
